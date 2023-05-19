@@ -2,8 +2,53 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
 body {
-  background-color: blue;
+  background-color: #6c6c6c;
+}
+
+/* nav */
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 10px;
+}
+
+#nav a {
+  color: #fff;
+}
+
+#menu ul li {
+  display: inline;
+  margin: 10px;
+}
+
+/* inicio */
+
+#inicio {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./img/image2.jpg");
+  background-repeat: no-repeat;
+}
+
+#inicio .container {
+  padding: 18em;
+}
+
+#inicio h1,
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#inicio .redessociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
