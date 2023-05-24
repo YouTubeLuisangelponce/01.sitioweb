@@ -15,6 +15,7 @@ body {
 #nav {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 10px 10px;
 }
 
@@ -24,7 +25,7 @@ body {
 
 #menu ul li {
   display: inline;
-  margin: 10px;
+margin: 10px;
 }
 
 /* inicio */
@@ -33,6 +34,7 @@ body {
   background-image: url("./img/image2.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100vh;
+  color: #fff;
 }
 
 #inicio .container {
@@ -50,6 +52,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 20px;
 }
 
 /* info */
@@ -58,6 +61,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   margin: 30px;
 }
 
@@ -72,5 +76,70 @@ p {
 /* habilidades */
 
 #habilidades {
+  width: 100%;
   text-align: center;
+}
+
+#habilidades h3,
+h1 {
+  width: 100%;
+}
+
+#habilidades .card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  max-width: 100%;
+  margin: auto;
+}
+
+/* portafolio */
+
+#portafolio {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 5em auto;
+}
+
+#portafolio h3,
+h1 {
+  width: 100%;
+}
+
+#portafolio .cardproyect {
+  margin: 10px auto 10px;
+  background-color: #292c36;
+  border-radius: 20px;
+}
+
+/* footer */
+
+#footer {
+  text-align: center;
+  margin: -2em auto 2em;
+}
+
+/* media */
+
+@media (max-width: 900px) {
+  #menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #inicio .container {
+    padding: 0;
+    height: 200px;
+  }
+  #info {
+    flex-wrap: wrap;
+  }
+  #info img {
+    width: 200px;
+  }
+  #portafolio img {
+    width: 200px;
+  }
 }
